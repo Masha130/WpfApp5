@@ -1,0 +1,38 @@
+﻿<Window x:Class="WpfApp5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp5"
+        mc:Ignorable="d"
+        Title="Test" Height="450" Width="800">
+    <StackPanel>
+        <StackPanel Name="stackPanel">
+            <TextBlock Text="Вопрос 1: Сколько цветов в радуге?"/>
+            <RadioButton GroupName="1" Content="два"/>
+            <RadioButton GroupName="1" Content="шесть"/>
+            <RadioButton GroupName="1" Content="семь" Tag="Correct"/>
+            <RadioButton GroupName="1" Content="восемь"/>
+
+            <TextBlock Text="Вопрос 2: Какое сейчас время года?"/>
+            <RadioButton GroupName="2" Content="осень" Tag="Correct"/>
+            <RadioButton GroupName="2" Content="зима"/>
+            <RadioButton GroupName="2" Content="весна"/>
+            <RadioButton GroupName="2" Content="лето"/>
+
+            <TextBlock Text="Вопрос 3: Какая сейчас пара?"/>
+            <RadioButton GroupName="3" Content="Математика"/>
+            <RadioButton GroupName="3" Content="Excel"/>
+            <RadioButton GroupName="3" Content="C#" Tag="Correct"/>
+            <RadioButton GroupName="3" Content="Базы данных"/>
+
+            <TextBlock Text="Вопрос 4: 2x2=?"/>
+            <RadioButton GroupName="4" Content="2"/>
+            <RadioButton GroupName="4" Content="6"/>
+            <RadioButton GroupName="4" Content="56256252"/>
+            <RadioButton GroupName="4" Content="4" Tag="Correct"/>
+
+            <Button Content="Отправить" Height="30" Width="80" Click="Button_Click"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
